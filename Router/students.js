@@ -64,6 +64,8 @@ router.put("/edit/:id",async(req,res)=>{
         res.status(500).json({message:"Internal Server Error"})
     }
 })
+
+
 router.delete("/remove/:id",async(req,res)=>{
     try {
         const {id} = req.params;
